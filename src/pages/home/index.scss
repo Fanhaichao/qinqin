@@ -1,0 +1,28 @@
+@import '../../assets/style//border.scss';
+@import '../../assets/style/theme.scss';
+
+.container {
+    .nav {
+        @include border(#ccc, 0 0 1px 0);
+        height: .44rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: #666666;
+            font-weight: bold;
+            height: 100%;
+            line-height: .44rem;
+            font-size: .16rem;
+            padding: 0 .10rem;
+            border-bottom: .02rem solid transparent;
+
+            &.active {
+                color: $theme;
+                border-bottom: .02rem solid $theme;
+            }
+        }
+    }
+}
